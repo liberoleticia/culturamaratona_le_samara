@@ -1,80 +1,50 @@
-body {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    font-family: 'Poppins', 'Verdana', 'Arial';
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(130, 197, 24, 1) 100%);
-    max-width: 1090px;
+:root{
+    --bg-main:#120018;
+    --bg-secondary:#1B0B2A;
+    --pink-neon:#FF2E9A;
+    --purple-neon:#9D4EDD;
+    --cyan:#00F0FF;
+    --text:#F5F5F5;
 }
 
-h2,
-p {
-    margin: 10px;
+body{
+    background: var(--bg-main);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
 }
 
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu{
+    background: linear-gradient(90deg,#1B0B2A,#2E1047);
+}
+
+.goodpay-card{
+    background: #1B0B2A;
+    border: 2px solid var(--purple-neon);
+    border-radius: 16px;
     overflow: hidden;
-    background-color: #444444;
+    transition: .3s;
 }
 
-.menu li {
-    float: left;
+.goodpay-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px var(--pink-neon);
 }
 
-.menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    height: fit-content;
+.w3-button{
+    background: var(--purple-neon)!important;
+    color:white!important;
 }
 
-.menu li a:hover:not(.active) {
-    background-color: #111111;
+.w3-button:hover{
+    background: var(--pink-neon)!important;
 }
 
-.menu li a.active {
-    background-color: #009929;
-    padding: 5px;
-    margin: 0;
-}
-
-.mySlides {
-    display: none;
-}
-
-.w3-left,
-.w3-right,
-.w3-badge {
-    cursor: pointer;
-}
-
-.w3-badge {
-    height: 13px;
-    width: 13px;
-    padding: 0;
-}
-
-.banner {
-    max-width: 1090px;
-}
-
-.goodpay-card {
-    width: 100%;
-    max-width: 350px;
-    background-color: aliceblue;
-}
 .goodpay-faq{
-    background-color: aliceblue;
-    padding: 10px;
-    margin-top: 20px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    background:#1B0B2A;
+    border-radius:20px;
+    padding:20px;
 }
-.goodpay-modal{
-    height: 460px;
+
+h1,h2,h3{
+    color: var(--pink-neon);
 }
